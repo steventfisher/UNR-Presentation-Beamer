@@ -1,6 +1,4 @@
 \documentclass[xcolor=dvipsnames]{beamer}
-%\usepackage[utf8]{inputenc}
-%\usepackage{xcolor}
 \usepackage{graphicx}
 \usepackage{MnSymbol}
 \usepackage{tikz}
@@ -10,8 +8,7 @@
 \usepackage{colortbl}
 \usepackage{caption}
 \usepackage{comment}
-%\usepackage[utf8]{inputenc}
-\usepackage[USenglish,english,american]{babel}
+\usepackage[british,UKenglish,USenglish,english,american]{babel}
 \usepackage{pdfpages}
 \usepackage{listings}
 \usepackage{color}
@@ -20,22 +17,23 @@
 \usepackage[normalem]{ulem}
 \usepackage{lipsum}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%               Beamer Themes                     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usetheme{default}
-%\usetheme{Madrid}
-%\usecolortheme[named=Maroon]{structure}
 \usecolortheme{default}
 \usefonttheme{professionalfonts}
 \useoutertheme{infolines}
 \useinnertheme{circles}
 
-\usepackage{tikz}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%               Formating Beamer                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{listings}
 \usepackage{color}
 
@@ -51,19 +49,24 @@
 \setbeamercolor{section in toc}{fg=UNRblue} % TOC sections
 \setbeamercolor{block title}{use=structure,fg=white,bg=UNRblue}
 \setbeamercolor{block body}{use=structure,fg=white,bg=UNRgrey}
-
 \setbeamercolor{subsection in head/foot}{bg=UNRsilver,fg=white}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\beamertemplatenavigationsymbolsempty
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-\title[Title]{\includegraphics[height=1.8cm]{images/nevada-vertical-blue.eps}\\Title}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%               Title Page                        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[Title]{\includegraphics[height=1.8cm]{images/nevada-blockn-blue.eps}\\Title}
 \author[John Doe]{ \textbf{John Doe}}
-\institute{UNR}
-\logo{\includegraphics[height=1.5cm]{images/nevada-horizontal-blue.eps}}
+\institute[UNR]{University of Nevada, Reno}
+\date{December 18, 2019}
+\logo{\includegraphics[height=0.75cm]{images/nevada-horizontal-blue.eps}}
 
-\logo{\includegraphics[height=0.8cm]{images/nevada-horizontal-blue.eps}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%               Begin Document                    %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 {
 \usebackgroundtemplate{\tikz\node[opacity=0.9]{\includegraphics[width=\paperwidth]{images/unr-image.png}};}
@@ -93,7 +96,7 @@
    \section{Section 2}  
      \begin{frame}{Title Frame 2}
         \begin{block}{Block}
-            \lipsum[1]
+            \lipsum[2]
         \end{block}
      \end{frame}
      

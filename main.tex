@@ -1,0 +1,122 @@
+\documentclass[xcolor=dvipsnames]{beamer}
+%\usepackage[utf8]{inputenc}
+%\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{MnSymbol}
+\usepackage{tikz}
+\usepackage{media9}
+\usetikzlibrary{arrows,shapes}
+\usepackage{stmaryrd}
+\usepackage{colortbl}
+\usepackage{caption}
+\usepackage{comment}
+%\usepackage[utf8]{inputenc}
+\usepackage[USenglish,english,american]{babel}
+\usepackage{pdfpages}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{booktabs}
+\usepackage{soul}
+\usepackage[normalem]{ulem}
+\usepackage{lipsum}
+
+\usetheme{default}
+%\usetheme{Madrid}
+%\usecolortheme[named=Maroon]{structure}
+\usecolortheme{default}
+\usefonttheme{professionalfonts}
+\useoutertheme{infolines}
+\useinnertheme{circles}
+
+\usepackage{tikz}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{UNRblue}{RGB}{0,46,98}
+\definecolor{UNRsilver}{RGB}{128,127,132}
+\definecolor{UNRgrey}{RGB}{142,146,149}
+
+\setbeamercolor{palette primary}{bg=UNRblue,fg=white}
+\setbeamercolor{palette secondary}{bg=UNRblue,fg=white}
+\setbeamercolor{palette tertiary}{bg=UNRblue,fg=white}
+\setbeamercolor{palette quaternary}{bg=UNRblue,fg=white}
+\setbeamercolor{structure}{fg=UNRblue} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=UNRblue} % TOC sections
+\setbeamercolor{block title}{use=structure,fg=white,bg=UNRblue}
+\setbeamercolor{block body}{use=structure,fg=white,bg=UNRgrey}
+
+\setbeamercolor{subsection in head/foot}{bg=UNRsilver,fg=white}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\title[Title]{\includegraphics[height=1.8cm]{images/nevada-vertical-blue.eps}\\Title}
+\author[John Doe]{ \textbf{John Doe}}
+\institute{UNR}
+\logo{\includegraphics[height=1.5cm]{images/nevada-horizontal-blue.eps}}
+
+\logo{\includegraphics[height=0.8cm]{images/nevada-horizontal-blue.eps}}
+
+
+\begin{document}
+{
+\usebackgroundtemplate{\tikz\node[opacity=0.9]{\includegraphics[width=\paperwidth]{images/unr-image.png}};}
+\begin{frame}
+\vspace{6em}
+  \titlepage
+\end{frame}
+}
+\begin{frame}
+\frametitle{\textbf{Outline:}}
+\tableofcontents
+\end{frame}
+
+		
+  
+    \section{Section 1}  
+     \begin{frame}{Title frame 1}
+            \begin{block}{Block blue}
+    		\begin{itemize}
+    		\item Item 1
+    		\item Item 2
+    		\item Item 3
+  			\end{itemize}
+        \end{block}  
+     \end{frame}
+          
+   \section{Section 2}  
+     \begin{frame}{Title Frame 2}
+        \begin{block}{Block}
+            \lipsum[1]
+        \end{block}
+     \end{frame}
+     
+%*********************************************************************************************
+\begin{frame}\frametitle{}
+  \centering
+    \includegraphics[scale=0.3]{images/thankyou}
+    
+\end{frame}
+
+%**********************************************************************************************
+%\begin{frame}\frametitle{}
+%  \centering
+%    \includemedia[
+%  width=0.6\linewidth,height=0.45\linewidth,
+%  activate=pageopen,
+%  flashvars={
+%    modestbranding=1 % no YT logo in control bar
+%   &autohide=1       % controlbar autohide
+%   &showinfo=0       % no title and other info before start
+%  }
+%]{}{http://www.youtube.com/v/dISaXUlilkU?rel=0}   % Flash file 
+      
+%\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

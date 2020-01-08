@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 %   author: Steven Fisher
-%   description: This is a beginning attempt at puttint together
-%                a beamer template for the Univeristy of Nevada, Reno
+%   description: This is a beginning attempt at putting together
+%                a beamer template for the University of Nevada, Reno
 %                This document is presented AS-IS and release under
 %
 
@@ -15,13 +15,11 @@
 %%          University of Nevada - Reno
 %%          stevenfisher@nevada.unr.edu
 %%
-%% Note:    This is a beginning attempt at puttint together
-%%          a beamer template for the Univeristy of Nevada, Reno
-%%          This document is presented AS-IS and release under
+%% Note:    This document is presented AS-IS and release under
 %%          The MIT License.
 %%
 
-\documentclass[xcolor=dvipsnames]{beamer}
+\documentclass[xcolor=dvipsnames, hyperref=hidelinks, url=hyphens]{beamer}
 \usepackage{graphicx}
 \usepackage{MnSymbol}
 \usepackage{tikz}
@@ -48,7 +46,7 @@
 \usecolortheme{default}
 \usefonttheme{professionalfonts}
 \useoutertheme{infolines}
-\useinnertheme{circles}
+\useinnertheme{rounded}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -80,8 +78,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%               Title Page                        %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\title[Title]{\includegraphics[height=1.8cm]{images/nevada-blockn-blue.eps}\\Title} %use if includeing image on title
-\title[Title]{\textbf{Title}}
+\title[Title]{\includegraphics[height=1.7cm]{images/nevada-blockn-blue.eps}\\Title\vspace{-2ex}} %\vspace needed to reduce spacing between title and author's name. Use if including image on title
+%\title[Title]{\textbf{Title}\vspace{-2ex}} %\vspace needed to reduce spacing between title and author's name.}
 \author[John Doe]{ \textbf{John Doe}}
 \institute[UNR]{University of Nevada, Reno}
 \date{December 18, 2019}
@@ -94,10 +92,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 {
-\usebackgroundtemplate{\tikz\node[opacity=0.9]{\includegraphics[width=\paperwidth]{images/unr-image.png}};} %Add image to title page
+%\usebackgroundtemplate{\tikz\node[opacity=0.9]{\includegraphics[width=\paperwidth]{images/unr-image.png}};} %Add image to title page
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{images/unr-image.png}}
 \begin{frame}
-%\vspace{6em}%use if include image on title
-\vspace{8em}
+\vspace{6em}%use if including Nevada Logo image above title
+%\vspace{8em} %use if not including Nevada Logo image above title
   \titlepage
 \end{frame}
 }
@@ -127,6 +126,8 @@
             \lipsum[2]
         \end{block}
      \end{frame}
+     
+     
      
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}

@@ -1,22 +1,19 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-%   author: Steven Fisher
-%   description: This is a beginning attempt at putting together
-%                a beamer template for the University of Nevada, Reno
-%                This document is presented AS-IS and release under
-%
+%%   author: Steven Fisher
+%%   description: This is a beginning attempt at putting together
+%%                a beamer template for the University of Nevada, Reno
+%%                This document is presented AS-IS and release under
+%%                The MIT License.
 
 %%
-%% File:    unrpres.tex
+%%   File:    unrpres.tex
 %%
-%% Use:     Template file for a UNR Beamer Presentation
+%%   Use:     Template file for a UNR Beamer Presentation
 %%
-%% Creator: Steven Fisher
-%%          Department of Computer Science & Engineering
-%%          University of Nevada - Reno
-%%          stevenfisher@nevada.unr.edu
-%%
-%% Note:    This document is presented AS-IS and release under
-%%          The MIT License.
+%%   Creator: Steven Fisher
+%%            Department of Computer Science & Engineering
+%%            University of Nevada - Reno
+%%            stevenfisher@nevada.unr.edu
 %%
 
 \documentclass[xcolor=dvipsnames, hyperref=hidelinks, url=hyphens]{beamer}
@@ -40,7 +37,7 @@
 %\usepackage[orientation=landscape,size=custom,width=16,height=9.75,scale=0.5,debug]{beamerposter} %Uncomment if widescreen is needed
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%               Beamer Themes                     %%
+%%%%               Beamer Themes                   %%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usetheme{default}
 \usecolortheme{default}
@@ -54,7 +51,7 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%               Formating Beamer                  %%
+%%%%               Formating Beamer                %%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{listings}
 \usepackage{color}
@@ -76,7 +73,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%               Title Page                        %%
+%%%%               Title Page                      %%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title[Title]{\includegraphics[height=1.7cm]{images/nevada-blockn-blue.eps}\\Title\vspace{-2ex}} %\vspace needed to reduce spacing between title and author's name. Use if including image on title
 %\title[Title]{\textbf{Title}\vspace{-2ex}} %\vspace needed to reduce spacing between title and author's name.}
@@ -88,55 +85,55 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%               Begin Document                    %%
+%%%%               Begin Document                  %%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 {
-%\usebackgroundtemplate{\tikz\node[opacity=0.9]{\includegraphics[width=\paperwidth]{images/unr-image.png}};} %Add image to title page
-\usebackgroundtemplate{\includegraphics[width=\paperwidth]{images/unr-image.png}}
-\begin{frame}
-\vspace{6em}%use if including Nevada Logo image above title
-%\vspace{8em} %use if not including Nevada Logo image above title
-  \titlepage
-\end{frame}
+  %\usebackgroundtemplate{\tikz\node[opacity=0.9]{\includegraphics[width=\paperwidth]{images/unr-image.png}};} %Add image to title page
+  \usebackgroundtemplate{\includegraphics[width=\paperwidth]{images/unr-image.png}}
+  \begin{frame}
+    \vspace{6em}%use if including Nevada Logo image above title
+    %\vspace{8em} %use if not including Nevada Logo image above title
+    \titlepage
+  \end{frame}
 }
 \begin{frame}
-\frametitle{\textbf{Outline:}}
-\tableofcontents
+  \frametitle{\textbf{Outline:}}
+  \tableofcontents
 \end{frame}
 
-		
-  
-    \section{Section 1}  
-    \subsection{Subsection 1}
-     \begin{frame}{Title frame 1}
-            \begin{block}{Block blue}
-    		\begin{itemize}
-    		\item Item 1
-    		\item Item 2
-    		\item Item 3
-  			\end{itemize}
-        \end{block}  
-     \end{frame}
-          
-   \section{Section 2}
-   \subsection{Subsection 1}
-     \begin{frame}{Title Frame 2}
-        \begin{block}{Block}
-            \lipsum[2]
-        \end{block}
-     \end{frame}
-     
-     
-     
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Section 1}  
+\subsection{Subsection 1}
+\begin{frame}{Title frame 1}
+  \begin{block}{Block blue}
+    \begin{itemize}
+    \item Item 1
+    \item Item 2
+    \item Item 3
+    \end{itemize}
+  \end{block}  
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Section 2}
+\subsection{Subsection 1}
+\begin{frame}{Title Frame 2}
+  \begin{block}{Block}
+    \lipsum[2]
+  \end{block}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
 \subsection{Thank You}
 \begin{frame}\frametitle{}
   \centering
-    \includegraphics[scale=0.3]{images/thankyou}
-    
+  \includegraphics[scale=0.3]{images/thankyou}
+  
 \end{frame}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \end{document}
